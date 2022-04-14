@@ -1,294 +1,818 @@
-<!DOCTYPE HTML>
-
-
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179297612-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
 
-			gtag('config', 'UA-179297612-1');
-		</script>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-		<title>Connor Ollio</title>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/noscript.css" />
-	</head>
-	<body class="is-preload">
+  <title>Connor Ollio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <!-- Favicons -->
+  <link href="assets/img/block-letter-c.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/headshot.jpg" alt="" /></span>
-						<h1>Connor Ollio</h1>
-						<p>Learn a little bit about me.</p>
-						<p>Built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</header>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-				<!--Nav-->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">About Me</a></li>
-							<li><a href="#first">Classes</a></li>
-							<li><a href="#second">Interests</a></li>
-						</ul>
-						<ul>
-							<li><a href="#third">Task 03</a></li>
-							<li><a href='#fourth'>Task 04</a></li>
-							<li><a href='#fifth'>Task 05</a></li>
-						</ul>
-					</nav>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-				<!-- Main -->
-					<div id="main">
+  <!-- =======================================================
+  * Template Name: DevFolio - v4.7.1
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<h2>About Me</h2>
-										<p>Hello, my name is Connor Ollio. I am currently an undergraduate at the University of North Carolina - Chapel Hill.
-										I am a Statistics and Analytics Major, and I am a pitcher on the Tar Heels baseball team.</p>
-										<ul class="actions">
-											<li><a href="aboutme.html" class="button">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/oldwell.jpg" alt="" /></span>
-								</div>
-							</section>
+<body>
 
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Classes</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="image"><img src="images/computer.jpg" alt="" /></span>
-										<h3>INLS 161</h3>
-										<p>INLS 161 is called Tools for Information Literacy. This class is teaching me how to build this very website. </p>
-									</li>
-									<li>
-										<span class="image"><img src="images/stochasticmodeling.jpg" alt="" /></span>
-										<h3>STOR 455</h3>
-										<p>Stochastic Modeling is the name of STOR 455. It is one of the statistics classes required for my major.</p>
-									</li>
-									<li>
-										<span class="image"><img src="images/analytics.jpg" alt="" /></span>
-										<h3>EXSS 327</h3>
-										<p>My two favorite things collide in EXSS 327...sports and statistics. It is called Predictive Analytics in Sports.</p>
-									</li>
-								</ul>
-								<ul class="features">
-									<li>
-										<span class="image"><img src="images/actuary.jpg" alt="" /></span>
-										<h3>STOR 471</h3>
-										<p>STOR 471 is another statistics class required for my major. It is called Long Term Actuarial Models.
-										I am learning how to become an actuary.</p>
-									</li>
-									<li>
-										<span class="image"><img src="images/americanflag.png" alt="" /></span>
-										<h3>PWAD 238</h3>
-										<p>The American Revolution was so much more than just a war. PWAD 238 is simply an elective but it sure is interesting.</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="classes.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
 
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Interests</h2>
-									<!-- <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p> -->
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<!-- <span class="image"><img src="images/sportsballs.jpg" width="100" height="80" alt="" /></span> -->
-										<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/sportsballs.jpg" alt="" >
-										<script>
-										function bigImg(x) {
-										  x.style.height = "80px";
-										  x.style.width = "100px";
-										}
+      <h1 class="logo"><a href="index.html">C Ollio</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-										function normalImg(x) {
-										  x.style.height = "40px";
-										  x.style.width = "50px";
-										}
-										</script>
-										<strong>Sports</strong>
-									</li>
-									<li class="style1">
-										<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/food.jpg" alt="" >
-										<script>
-										function bigImg(x) {
-										  x.style.height = "80px";
-										  x.style.width = "100px";
-										}
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Projects</a></li>
+          <li><a class="nav-link scrollto" href="#counter">Programming Experience</a></li>
+          <li><a class="nav-link scrollto" href="#work">Community Involvement</a></li>
+          <li><a class="nav-link scrollto" href="#experience">Experience and Awards</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#blog">Blog</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a> -->
+            <!-- <ul> -->
+              <!-- <li><a href="#">Drop Down 1</a></li> -->
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a> -->
+                <!-- <ul> -->
+                  <!-- <li><a href="#">Deep Drop Down 1</a></li> -->
+                  <!-- <li><a href="#">Deep Drop Down 2</a></li> -->
+                  <!-- <li><a href="#">Deep Drop Down 3</a></li> -->
+                  <!-- <li><a href="#">Deep Drop Down 4</a></li> -->
+                  <!-- <li><a href="#">Deep Drop Down 5</a></li> -->
+                <!-- </ul> -->
+              <!-- </li> -->
+              <!-- <li><a href="#">Drop Down 2</a></li> -->
+              <!-- <li><a href="#">Drop Down 3</a></li> -->
+              <!-- <li><a href="#">Drop Down 4</a></li> -->
+            <!-- </ul> -->
+          <!-- </li> -->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-										function normalImg(x) {
-										  x.style.height = "40px";
-										  x.style.width = "50px";
-										}
-										</script>
-										<strong>Food</strong>
-									</li>
-									<li class="style1">
-										<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/movies.png" alt="" >
-										<script>
-										function bigImg(x) {
-										  x.style.height = "80px";
-										  x.style.width = "100px";
-										}
+    </div>
+  </header><!-- End Header -->
 
-										function normalImg(x) {
-										  x.style.height = "40px";
-										  x.style.width = "50px";
-										}
-										</script>
-										<strong>Movies</strong>
-									</li>
-									<li class="style1">
-										<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/travel.jpg" alt="" >
-										<script>
-										function bigImg(x) {
-										  x.style.height = "80px";
-										  x.style.width = "100px";
-										}
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/connor-ollio.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4">I am Connor Ollio</h1>
+          <!-- <p class="hero-subtitle"><span class="typed" data-typed-items="Son, Brother, Baseball Player, Statistician"></span></p> -->
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Hero Section -->
 
-										function normalImg(x) {
-										  x.style.height = "40px";
-										  x.style.width = "50px";
-										}
-										</script>
-										<strong>Travel</strong>
-									</li>
-								</ul>
-								<p class="content">My mom always claims that I was born with a ball in my hand. For as long as I can remember, I have always played sports.
-								Sports have given me so many opportunities and experiences throughout my childhood and early adult life. Experiences ranging from traveling across the country playing baseball
-								to having a makeshift Thanksgiving Dinner with basketball teams, the memories are overwhelming. To learn more about my favorite movies, food, and places I've come across click the 
-								button below.</p>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="interests.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+  <main id="main">
 
-						<!-- Third Section -->
-							<section id="third" class="main special">
-								<header class="major">
-									<h2>Task 03</h2>
-									<p>Document Markup</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="task03.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
-							
-						<!-- Fourth Section -->
-							<section id="fourth" class="main special">
-								<header class="major">
-									<h2>Task 04</h2>
-									<p>Working with Data</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="task04.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
-														
-						<!-- Fifth Section -->
-							<section id="fifth" class="main special">
-								<header class="major">
-									<h2>Task 05</h2>
-									<p>Coming Soon.</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="task05.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="assets/img/headshot.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Connor Ollio</span></p>
+                        <!-- <p><span class="title-s">Profile: </span> <span>full stack developer</span></p> -->
+                        <p><span class="title-s">Email: </span> <span>ollio.connor24 @gmail.com</span></p>
+                        <p><span class="title-s">Phone: </span> <span>(724) 996-8357</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Quantitative Skills</p>
+                    <span>Corporate Financee</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Accounting</span> <span class="pull-right">50%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Micro/Macroeconomics</span> <span class="pull-right">60%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Data Analysis</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      My name is Connor Ollio and I am currently a senior at the University of North Carolina at 
+					  Chapel Hill. I am from a suburb north of Pittsburgh, PA called Butler and my family lives all around
+					  the Pittsburgh area. I played baseball and basketball in high school before I came to Chapel Hill.
+                    </p>
+                    <p class="lead">
+                      In school now, I am a Statistics and Analytics major while being a pitcher on the Tar Heels Baseball
+					  team. I have been extremely lucky to have so many experiences being on the baseball team ranging from 
+					  traveling around the world to volunteering in our own community. Math has always been my favorite subject 
+					  in school, and the statistics courseload has greatly enhanced my skills.
+                    </p>
+                    <p class="lead">
+                      I have a loving and amazing family. There are four of us, my father, my mother, me, and my younger sister. 
+					  Additionally, we have a dog named Wally. The five of us are very close and family is the most important thing
+					  in my life. Having their love and support always reminds me how lucky I am. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
 
-					</div>
+    <!-- ======= Projects Section ======= -->
+    <section id="services" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Projects
+              </h3>
+              <p class="subtitle-a">
+                Read about some of the work I've completed.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <img src="assets/img/football.png" alt="" class="ico-circle">
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">NFL Predictions</h2>
+                <p class="s-description text-center">
+                  Using historical data, I was able to predict the total points scored, spread of the score,
+				  and the winner of each NFL game over a 4-week span during the 2020-21 NFL season. I predicted the winning team 
+				  with greater than 60% accuracy.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <img src="assets/img/ea-sports.jpg" alt="" class="ico-circle">
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Madden Cover</h2>
+                <p class="s-description text-center">
+                  I predicted which player would be on the cover of Madden EA Sports based on performance data
+				  in correlation with historical data of previous cover athletes. I was also able to determine the validity
+				  of the "Madden Curse" based on next season performance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <img src="assets/img/ultimate-frisbee.jpg" alt="" class="ico-circle">
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Ultimate Frisbee</h2>
+                <p class="s-description text-center">
+                  After studying the current state of statistics in Ultimate Frisbee, I developed innovative analysis methods
+				  and unique data collection techniques in hopes of enhancing the correlation between statistics and success on the field.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <img src="assets/img/wacc.avif" alt="" class="ico-circle">
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">WACC Analysis</h2>
+                <p class="s-description text-center">
+                  Using the Weighted Average Cost of Capital methodology, I assessed the success of Amazon, Inc.  
+				  expanding their business into the Healthcare IT industry. I made my conclusion after analyzing the captial structures of many companies.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <img src="assets/img/cash-flow.jpg" alt="" class="ico-circle">
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Cash Flow Analysis</h2>
+                <p class="s-description text-center">
+                  I analyzed the given financial statements for an imaginary company then used that information to determine the 
+				  profitability of introducing a new product into the current market environment. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <img src="assets/img/diamond.png" alt="" class="ico-circle">
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Diamond Pricing</h2>
+                <p class="s-description text-center">
+                  I correlated the price of diamonds with their cut, color, clarity, and carat weight as precisely as possible. After 
+				  maximizing the correlation, I used my model to predict the price of any given diamond. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Contact</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>310 South Road &bull; Chapel Hill, NC 27514 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(919) 962-2211</dd>
-								<dt>Email</dt>
-								<dd class="image"><img src="images/email.png" alt="" /></dd>
-							</dl>
-						</section>
-						<p class="copyright">&copy; C.Ollio. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-						<script>var year = new Date();document.write(year.getFullYear());</script> | 
-						Last Updated on
-						<script>
-							<!-- Display Date -->
-							<!-- This script and many more are available free online at -->
-							<!-- The JavaScript Source!! http://javascript.internet.com -->
-							<!-- Begin
-								var days = new Array(8);
-								days[1] = "Sunday";
-								days[2] = "Monday";
-								days[3] = "Tuesday";
-								days[4] = "Wednesday";
-								days[5] = "Thursday";
-								days[6] = "Friday";
-								days[7] = "Saturday";
-								var months = new Array(13);
-								months[1] = "January";
-								months[2] = "February";
-								months[3] = "March";
-								months[4] = "April";
-								months[5] = "May";
-								months[6] = "June";
-								months[7] = "July";
-								months[8] = "August";
-								months[9] = "September";
-								months[10] = "October";
-								months[11] = "November";
-								months[12] = "December";
-								var dateObj = new Date(document.lastModified)
-								var wday = days[dateObj.getDay() + 1]
-								var lmonth = months[dateObj.getMonth() + 1]
-								var date = dateObj.getDate()
-								var fyear = dateObj.getYear()
-								if (fyear < 2000) fyear = fyear + 1900
-								document.write("" + wday + ", " + date + " " + lmonth + " " + fyear)
-							// End -->
-						</script> 
-					</footer>
+    <!-- ======= Counter Section ======= -->
+   <section id="counter" class="portfolio-mf sect-pt4 route">
+   <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/hanes-hall.jpg)">
+	  <div class="overlay-mf"></div>
+	  <div class="container position-relative">
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <img src="assets/img/r-studio.png" alt="" class="ico-circle">
+              </div>
+              <div class="counter-num">
+                <!-- <p data-purecounter-start="0" data-purecounter-end="" data-purecounter-duration="1" class="counter purecounter"></p> -->
+                <span class="counter-text">R / RStudio</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <img src="assets/img/spss.svg" alt="" class="ico-circle">
+              </div>
+              <div class="counter-num">
+                <!-- <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="counter purecounter"></p> -->
+                <span class="counter-text">SPSS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <img src="assets/img/python.png" alt="" class="ico-circle">
+              </div>
+              <div class="counter-num">
+                <!-- <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1" class="counter purecounter"></p> -->
+                <span class="counter-text">Python</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <img src="assets/img/matlab.png" alt="" class="ico-circle">
+              </div>
+              <div class="counter-num">
+                <!-- <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="counter purecounter"></p> -->
+                <span class="counter-text">MatLab</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Counter Section -->
+
+    <!-- ======= Volunteer Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Volunteer Work
+              </h3>
+              <p class="subtitle-a">
+                These are a few causes that I've volunteered with and hold a special place in my heart.
+				Click on the plus to navigate to the organization's homepage to learn more.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/vs_cancer.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">VS Cancer</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Pediatric Brain Cancer</span>  <span class="w-date">Aug. 2018 - Present</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="http://www.vs-cancer.org/"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/habitat-for-humanity.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Habitat for Humanity</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Family Home Building</span> <span class="w-date">Jun. 2018 - Present</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://www.habitat.org/"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/miracle-league.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Miracle League Baseball</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Disability Baseball</span> <span class="w-date">May 2015 - Present</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://www.miracleleague.com/"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/score-intl.svg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">SCORE International</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Baseball Mission Trip</span>  <span class="w-date">Oct. 2019</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="http://www.scorebaseball.org/"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/special-olympics.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Special Olympics</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Special Needs Bocce</span>  <span class="w-date">Dec. 2017</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://www.specialolympics.org/"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/st-jude.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">St. Jude Children Hospital</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Pediatric Research</span>  <span class="w-date">Jun. 2016</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://www.stjude.org/"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="experience" class="portfolio-mf sect-pt4 route">
+    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/boshamer.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/unc-logo.png" alt="" class="rounded-circle b-shadow-a">
+                      <span class="author">Iron Ram</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Voted on by baseball and strength coaches and awarded to the hardest worker in the
+						weight room.
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/graduation-cap.png" alt="" class="rounded-circle b-shadow-a">
+                      <span class="author">ACC Academic Honor Roll </span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Qualified for the ACC Academic Honor Roll during both the 2020 and 2021 seasons by registering
+						a GPA above 3.0 for the full academic year.
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+				
+				<div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/leadership-academy.jpg" alt="" class="rounded-circle b-shadow-a">
+                      <span class="author">Richard A. Baddour Carolina Leadership Academy</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Program to enhance leadership, communication, and networking skills in a group setting
+						with other student athletes. Completed up through the "Carolina Navigate" level.
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+				
+				<div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/bloomberg.jpg" alt="" class="rounded-circle b-shadow-a">
+                      <span class="author">Bloomberg Market Concepts</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Completed certification in the Bloomberg Markets Terminal during completion of Corporate
+						Finance course. Certificate available upon request. 
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+              </div>
+				<div class="swiper-pagination"></div>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
+          
+        </div> -->
+          </div>
+        </div>
+      </div>
+    </div><!-- End Testimonials Section -->
 
-	</body>
+    <!-- ======= Blog Section ======= -->
+    <!-- <section id="blog" class="blog-mf sect-pt4 route"> -->
+      <!-- <div class="container"> -->
+        <!-- <div class="row"> -->
+          <!-- <div class="col-sm-12"> -->
+            <!-- <div class="title-box text-center"> -->
+              <!-- <h3 class="title-a"> -->
+                <!-- Blog -->
+              <!-- </h3> -->
+              <!-- <p class="subtitle-a"> -->
+                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. -->
+              <!-- </p> -->
+              <!-- <div class="line-mf"></div> -->
+            <!-- </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="row"> -->
+          <!-- <div class="col-md-4"> -->
+            <!-- <div class="card card-blog"> -->
+              <!-- <div class="card-img"> -->
+                <!-- <a href="blog-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a> -->
+              <!-- </div> -->
+              <!-- <div class="card-body"> -->
+                <!-- <div class="card-category-box"> -->
+                  <!-- <div class="card-category"> -->
+                    <!-- <h6 class="category">Travel</h6> -->
+                  <!-- </div> -->
+                <!-- </div> -->
+                <!-- <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3> -->
+                <!-- <p class="card-description"> -->
+                  <!-- Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis -->
+                  <!-- a pellentesque nec, -->
+                  <!-- egestas non nisi. -->
+                <!-- </p> -->
+              <!-- </div> -->
+              <!-- <div class="card-footer"> -->
+                <!-- <div class="post-author"> -->
+                  <!-- <a href="#"> -->
+                    <!-- <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
+                    <!-- <span class="author">Morgan Freeman</span> -->
+                  <!-- </a> -->
+                <!-- </div> -->
+                <!-- <div class="post-date"> -->
+                  <!-- <span class="bi bi-clock"></span> 10 min -->
+                <!-- </div> -->
+              <!-- </div> -->
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="col-md-4"> -->
+            <!-- <div class="card card-blog"> -->
+              <!-- <div class="card-img"> -->
+                <!-- <a href="blog-single.html"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a> -->
+              <!-- </div> -->
+              <!-- <div class="card-body"> -->
+                <!-- <div class="card-category-box"> -->
+                  <!-- <div class="card-category"> -->
+                    <!-- <h6 class="category">Web Design</h6> -->
+                  <!-- </div> -->
+                <!-- </div> -->
+                <!-- <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3> -->
+                <!-- <p class="card-description"> -->
+                  <!-- Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis -->
+                  <!-- a pellentesque nec, -->
+                  <!-- egestas non nisi. -->
+                <!-- </p> -->
+              <!-- </div> -->
+              <!-- <div class="card-footer"> -->
+                <!-- <div class="post-author"> -->
+                  <!-- <a href="#"> -->
+                    <!-- <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
+                    <!-- <span class="author">Morgan Freeman</span> -->
+                  <!-- </a> -->
+                <!-- </div> -->
+                <!-- <div class="post-date"> -->
+                  <!-- <span class="bi bi-clock"></span> 10 min -->
+                <!-- </div> -->
+              <!-- </div> -->
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="col-md-4"> -->
+            <!-- <div class="card card-blog"> -->
+              <!-- <div class="card-img"> -->
+                <!-- <a href="blog-single.html"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a> -->
+              <!-- </div> -->
+              <!-- <div class="card-body"> -->
+                <!-- <div class="card-category-box"> -->
+                  <!-- <div class="card-category"> -->
+                    <!-- <h6 class="category">Web Design</h6> -->
+                  <!-- </div> -->
+                <!-- </div> -->
+                <!-- <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3> -->
+                <!-- <p class="card-description"> -->
+                  <!-- Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis -->
+                  <!-- a pellentesque nec, -->
+                  <!-- egestas non nisi. -->
+                <!-- </p> -->
+              <!-- </div> -->
+              <!-- <div class="card-footer"> -->
+                <!-- <div class="post-author"> -->
+                  <!-- <a href="#"> -->
+                    <!-- <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
+                    <!-- <span class="author">Morgan Freeman</span> -->
+                  <!-- </a> -->
+                <!-- </div> -->
+                <!-- <div class="post-date"> -->
+                  <!-- <span class="bi bi-clock"></span> 10 min -->
+                <!-- </div> -->
+              <!-- </div> -->
+            <!-- </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </section><!-- End Blog Section --> -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/bosh.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <!-- <div class="title-box-2"> -->
+                      <!-- <h5 class="title-left"> -->
+                        <!-- Send Message Us -->
+                      <!-- </h5> -->
+                    <!-- </div> -->
+                    <!-- <div> -->
+                      <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
+                        <!-- <div class="row"> -->
+                          <!-- <div class="col-md-12 mb-3"> -->
+                            <!-- <div class="form-group"> -->
+                              <!-- <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required> -->
+                            <!-- </div> -->
+                          <!-- </div> -->
+                          <!-- <div class="col-md-12 mb-3"> -->
+                            <!-- <div class="form-group"> -->
+                              <!-- <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required> -->
+                            <!-- </div> -->
+                          <!-- </div> -->
+                          <!-- <div class="col-md-12 mb-3"> -->
+                            <!-- <div class="form-group"> -->
+                              <!-- <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required> -->
+                            <!-- </div> -->
+                          <!-- </div> -->
+                          <!-- <div class="col-md-12"> -->
+                            <!-- <div class="form-group"> -->
+                              <!-- <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea> -->
+                            <!-- </div> -->
+                          <!-- </div> -->
+                          <!-- <div class="col-md-12 text-center my-3"> -->
+                            <!-- <div class="loading">Loading</div> -->
+                            <!-- <div class="error-message"></div> -->
+                            <!-- <div class="sent-message">Your message has been sent. Thank you!</div> -->
+                          <!-- </div> -->
+                          <!-- <div class="col-md-12 text-center"> -->
+                            <!-- <button type="submit" class="button button-a button-big button-rouded">Send Message</button> -->
+                          <!-- </div> -->
+                        <!-- </div> -->
+                      <!-- </form> -->
+                    <!-- </div> -->
+                  <!-- </div> -->
+                  <!-- <div class="col-md-6"> -->
+                    <!-- <div class="title-box-2 pt-4 pt-md-0"> -->
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        Thanks for visiting my website and learning a little bit about me. I would love to talk more and get to know you.
+						Reach out to me through any of these forms of communication and I will get back to you as soon as I can. Also, click on 
+						the links below to visit my social media profiles.
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span> 260 Leigh Farm Road, Durham, NC 27707</li>
+                        <li><span class="bi bi-phone"></span> (724) 996-8357</li>
+                        <li><span class="bi bi-envelope"></span> ollio.connor24@gmail.com</li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <!-- <li><a href="https://www.facebook.com/"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li> -->
+                        <!-- <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li> -->
+                        <li><a href="https://twitter.com/c_ollio24"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                        <li><a href="https://unc.joinhandshake.com/stu/users/12463988"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>C.Ollio</strong></p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
