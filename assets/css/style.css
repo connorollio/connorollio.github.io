@@ -823,8 +823,8 @@ a:hover {
   margin-bottom: 1rem;
 }
 .counter-ico .ico-circle {
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
   line-height: 1.5;
   box-shadow: 0 0 0 10px #cde1f8;
 }
